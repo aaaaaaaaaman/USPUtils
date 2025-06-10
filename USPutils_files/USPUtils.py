@@ -206,3 +206,34 @@ def calc_elementos_locacao(est_n, est_e, ponto_n, ponto_e, ref_n, ref_e):
     return DEC_pra_AMS(round(az_lanc, 6)),  DEC_pra_AMS(round(ang_re, 6)), round(dist, 4)
 
 #Quimica dos materiais
+
+def nernst(E0, n, Q, T=298.15):
+    """Calcula o potencial usando a Equação de Nernst com sympy.
+    E = E0 - (RT/nF) * ln(Q)"""
+    R = 8.314
+    F = 96485
+    try:
+        E = E0 - (R * T) / (n * F) * sympy.ln(Q)
+        return round(float(E), 5)
+    except:
+        return "Erro no cálculo (verifique Q, n > 0, etc.)"
+
+def gibbs(E, n):
+    """Calcula ΔG (energia livre de Gibbs).
+    ΔG = -nFE"""
+    F = 96485
+    try:
+        return round(float(-n * F * E), 2)
+    except:
+        return "Erro no cálculo de ΔG"
+
+def gibbs_to_k(E, n, T=298.15):
+    """Constante de equilíbrio K a partir do potencial padrão.
+    ln(K) = nFE / RT → K = e^(nFE/RT)"""
+    R = 8.314
+    F = 96485
+    try:
+        expoente = (n * F * E) / (R * T)
+        return round(float(sympy.exp(expoente)), 4)
+    except:
+        return "Erro no cálculo da constante de equilíbrio"
