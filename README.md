@@ -19,3 +19,8 @@ A USPUtils será traduzida para as seguintes línguas no futuro:
 -Español
 
 obrigada por ler esse README, e bons estudos ^w^
+
+--UPDATE!--
+
+added USPUtils.help()
+adicionado USPUtils.help()
