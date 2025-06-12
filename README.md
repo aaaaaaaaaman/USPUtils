@@ -22,31 +22,5 @@ obrigada por ler esse README, e bons estudos ^w^
 
 --UPDATE!--
 
-added USPUtils.help()
-adicionado USPUtils.help()
-
-USPUtils is a public Python library that aims to help USP students, especially POLI students, understand certain concepts in their respective courses.
-
-This library is not intended to replace the learning of concepts presented in classes, much less to replace entire courses! USPUtils is simply intended to make things easier for students who understand Python functions better than mathematical formulas and already understand the concepts facilitated by the library, such as derivatives, integrals, azimuth calculations, etc.
-
-USPUtils will always be under development, just as education is always evolving. We aim to add other concepts such as Chemistry of materials, and integration with MANIM, for graphical representations of the concepts explained in USPUtils.
-
-WARNING!! USPUtils is not yet a library fully embraced by Python, so using PIP is futile for its installation! To create a project that uses USPUtils, unzip the .zip file and create a file inside the same folder as USPUtils. Do not delete the usp_mathparser.py file since it is a support library for USPUtils and must also be in the same directory as USPUtils.
-
-WARNING!! You MUST have Sympy and the Python math module installed before using USPUtils! it is dependent on both, as of the writing of this README, USPUtils does not yet automatically install these support libraries, I aim to make this a reality as soon as possible
-
-finally, the USPUtils code was written with the help of AIs like ChatGPT, reviewed by a human, and published by humans, the AI ​​was used only for support and kickstarter for the USPUtils idea, all its execution after that is by humans who dedicate their time (and rating) to this project, we do not earn any money from this project, all collaboration is welcome.
-
-USPUtils will be translated into the following languages ​​in the future:
--English
--Русский
--Deustch
--Ελινικα
--日本語
--Español
-
-Thanks for reading this README, and happy studying ^w^
-
---UPDATE!--
-
-added USPUtils.help()
+criado o arquivo USPUtils_Launcher.exe, arquivos movidos para um release dentro de um zip, biblioteca tkinter, requests entre outras adicionadas
+GUI interativa adicionada para o USPUtils
